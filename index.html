@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invitación a mi Graduación - Santos Ventura Ortiz</title>
+    <style>
+        /* --- Importación de Fuentes y Estilos Generales --- */
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
+        @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css');
+
+        body {
+            margin: 0;
+            font-family: 'Montserrat', sans-serif;
+            background-color: #f0f2f5;
+            color: #333;
+        }
+
+        .invitacion-container {
+            max-width: 700px;
+            margin: 20px auto;
+            background-color: #ffffff;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        .seccion {
+            padding: 40px;
+            text-align: center;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        .seccion:last-child {
+            border-bottom: none;
+        }
+
+        /* --- Sección 1: Encabezado --- */
+        .header {
+            background: linear-gradient(135deg, #003366, #004080); /* Colores UAGRM */
+            color: #ffffff;
+        }
+
+        .header .birrete-icon {
+            font-size: 50px;
+            color: #fdb913; /* Dorado UAGRM */
+            margin-bottom: 15px;
+        }
+
+        .header h1 {
+            font-size: 2.5em; margin: 10px 0; font-weight: 700; letter-spacing: 2px; text-transform: uppercase;
+        }
+
+        .header h2 {
+            font-size: 1.8em; margin: 0; font-weight: 400; color: #e0e0e0;
+        }
+
+        /* --- Sección 2: Graduado --- */
+        .graduado-info .profile-pic {
+            width: 150px; height: 150px; border-radius: 50%; border: 5px solid #003366; object-fit: cover; margin-bottom: 20px;
+        }
+
+        .graduado-info h2 {
+            font-size: 2.2em; margin-bottom: 5px; color: #003366;
+        }
+
+        .graduado-info h3, .graduado-info h4 {
+            font-size: 1.4em; margin: 0; color: #555; font-weight: 400;
+        }
+        
+        .graduado-info h4 { font-size: 1.2em; margin-top: 5px; }
+
+        .graduado-info .quote {
+            font-size: 1em; color: #666; margin-top: 20px; font-style: italic; max-width: 80%; margin-left: auto; margin-right: auto;
+        }
+
+        /* --- Sección 3: Detalles del Evento --- */
+        .detalles-evento {
+            background-color: #fafafa;
+        }
+        
+        .detalles-evento h2 {
+            font-size: 1.8em; color: #003366; margin-bottom: 30px; text-transform: uppercase; letter-spacing: 1px;
+        }
+
+        .evento-card {
+            background-color: #ffffff; padding: 25px; border-radius: 10px; box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05); margin-bottom: 25px; text-align: left;
+        }
+
+        .evento-card h3 {
+            font-size: 1.5em; color: #004080; margin-top: 0; margin-bottom: 20px; border-bottom: 2px solid #f0f0f0; padding-bottom: 10px;
+        }
+        
+        .evento-card p {
+            font-size: 1.1em; display: flex; align-items: center; margin: 15px 0;
+        }
+        
+        .evento-card i {
+            color: #003366; font-size: 1.2em; margin-right: 15px; width: 20px;
+        }
+        
+        .mapa-btn {
+            display: inline-block; margin-top: 20px; padding: 12px 25px; background-color: #003366; color: #ffffff; text-decoration: none; border-radius: 50px; font-weight: 700; transition: all 0.3s ease;
+        }
+        
+        .mapa-btn:hover {
+            background-color: #fdb913; color: #003366; transform: translateY(-2px);
+        }
+
+        /* --- Estilos para el Formulario de Confirmación --- */
+        .rsvp-form {
+            max-width: 500px;
+            margin: 20px auto 0 auto;
+            text-align: left;
+        }
+        
+        .rsvp-form label {
+            display: block;
+            font-weight: 700;
+            margin-bottom: 8px;
+            color: #333;
+        }
+        
+        .rsvp-form input {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            font-size: 1em;
+            box-sizing: border-box; 
+        }
+
+        .rsvp-btn {
+            display: block;
+            width: 100%;
+            padding: 15px 40px;
+            background-color: #003366;
+            color: #ffffff;
+            font-size: 1.2em;
+            font-weight: 700;
+            text-decoration: none;
+            border: none;
+            cursor: pointer;
+            border-radius: 50px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0, 51, 102, 0.4);
+        }
+        
+        .rsvp-btn:hover {
+            background-color: #fdb913;
+            color: #003366;
+            transform: translateY(-3px);
+        }
+        
+        .footer {
+            background-color: #003366; color: #e0e0e0; font-weight: 300;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="invitacion-container">
+        <!-- SECCIÓN 1: ENCABEZADO -->
+        <header class="seccion header">
+            <div class="birrete-icon"><i class="fas fa-graduation-cap"></i></div>
+            <h1>¡Misión Cumplida!</h1>
+            <h2>Te invito a mi Graduación</h2>
+        </header>
+
+        <!-- SECCIÓN 2: INFORMACIÓN DEL GRADUADO -->
+        <section class="seccion graduado-info">
+            <!-- CAMBIA ESTA URL POR LA DE TU FOTO -->
+            <img src="https://via.placeholder.com/150" alt="Foto de Santos Ventura Ortiz" class="profile-pic">
+            
+            <h2>Santos Ventura Ortiz</h2>
+            <h3>Ingeniería en Sistemas</h3>
+            <h4>Universidad Autónoma Gabriel René Moreno</h4>
+            <p class="quote">"El futuro pertenece a quienes creen en la belleza de sus sueños. Gracias por haber sido parte del mío."</p>
+        </section>
+
+        <!-- SECCIÓN 3: DETALLES DEL EVENTO -->
+        <section class="seccion detalles-evento">
+            <h2>Acompáñame a Celebrar</h2>
+            
+            <div class="evento-card">
+                <h3>Ceremonia y Desfile</h3>
+                <p><i class="fas fa-calendar-alt"></i> Jueves, 5 de Septiembre de 2024</p>
+                <p><i class="fas fa-map-marker-alt"></i> Campus U.A.G.R.M.</p>
+                <a href="https://maps.app.goo.gl/RmaCUnf1irM9xrK87" class="mapa-btn" target="_blank">Ver Ubicación en Maps</a>
+            </div>
+            
+            <div class="evento-card">
+                <h3>Fiesta de Graduación</h3>
+                <p><i class="fas fa-calendar-alt"></i> Viernes, 13 de Septiembre de 2024</p>
+                <p><i class="fas fa-map-marker-alt"></i> Salón de Eventos "El Dorado"</p>
+                <a href="https://maps.app.goo.gl/LgrvuwRKRCvQ5nnV6" class="mapa-btn" target="_blank">Ver Ubicación en Maps</a>
+            </div>
+        </section>
+        
+        <!-- SECCIÓN 4: CONFIRMACIÓN Y PIE DE PÁGINA -->
+        <section class="seccion rsvp">
+            <h2>Confirma tu Asistencia</h2>
+            <p>Por favor, llena los campos para confirmar. Agradecería tu respuesta para tener todo listo.</p>
+            
+            <form id="rsvp-form" class="rsvp-form">
+                <label for="nombre">Tu Nombre Completo:</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" required>
+                
+                <label for="acompanante">Nombre de tu Acompañante (Opcional):</label>
+                <input type="text" id="acompanante" name="acompanante" placeholder="Escribe el nombre si vienes con alguien">
+                
+                <button type="submit" class="rsvp-btn">Confirmar Asistencia por WhatsApp</button>
+            </form>
+        </section>
+
+        <footer class="seccion footer">
+            <p>¡TE ESPERO PARA BRINDAR JUNTOS!</p>
+        </footer>
+    </div>
+
+    <!-- SCRIPT PARA CONFIRMAR POR WHATSAPP (YA ESTÁ LISTO) -->
+    <script>
+        document.getElementById('rsvp-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const tuNumeroDeTelefono = '59163383676'; // ¡Número ya configurado!
+            const nombre = document.getElementById('nombre').value;
+            const acompanante = document.getElementById('acompanante').value;
+            let mensaje = `¡Hola Santos! 👋🎓\n\nConfirmo mi asistencia a tu graduación.\n\n*Nombre:* ${nombre}`;
+            if (acompanante) {
+                mensaje += `\n*Acompañante:* ${acompanante}`;
+            }
+            mensaje += `\n\n¡Nos vemos para celebrar! 🎉`;
+            const mensajeCodificado = encodeURIComponent(mensaje);
+            const urlWhatsApp = `https://wa.me/${tuNumeroDeTelefono}?text=${mensajeCodificado}`;
+            window.open(urlWhatsApp, '_blank');
+        });
+    </script>
+    
+    <!-- SCRIPT ALTERNATIVO (POR SI PREFIERES USAR CORREO)
+    <script>
+        document.getElementById('rsvp-form').addEventListener('submit', function(event) {
+            event.preventDefault(); 
+            const tuCorreo = 'santoventura50@gmail.com'; // ¡Correo ya configurado!
+            const nombre = document.getElementById('nombre').value;
+            const acompanante = document.getElementById('acompanante').value;
+            const asunto = 'Confirmación de Asistencia - Graduación de Santos';
+            let cuerpoMensaje = `¡Hola Santos!\n\nConfirmo mi asistencia a tu graduación.\n\nNombre: ${nombre}`;
+            if (acompanante) {
+                cuerpoMensaje += `\nAcompañante: ${acompanante}`;
+            }
+            cuerpoMensaje += `\n\n¡Nos vemos para celebrar!`;
+            const asuntoCodificado = encodeURIComponent(asunto);
+            const cuerpoCodificado = encodeURIComponent(cuerpoMensaje);
+            const urlMailto = `mailto:${tuCorreo}?subject=${asuntoCodificado}&body=${cuerpoCodificado}`;
+            window.location.href = urlMailto;
+        });
+    </script>
+    -->
+
+</body>
+</html>
